@@ -1,0 +1,126 @@
+/**
+Theme Name: Cederdorff Astra Child
+Author: Rasmus Cederdorff
+Author URI: http://cederdorff.com
+Description: Child Theme for Astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+/* TEKST BAGGRUND PÅ FORSIDE STYLING */
+
+#home .elementor-background-overlay{
+    filter: drop-shadow(18px 18px 16px #f5f5f5);
+    display: none;
+    margin-top: 4%;
+}
+
+/* Breakpoint for baggrundstekst*/
+@media screen and (min-width: 940px){
+    #home .elementor-background-overlay{display: block;}
+}
+
+
+/*PROJECTS & NAVBAR HOVER ZOOM EFFECT*/
+
+#project-one, #project-two, #project-three, #project-four{
+    transition: transform .2s!important; /* Animation */
+}
+#project-one:hover, #project-two:hover, #project-three:hover, #project-four:hover{
+    transform: scale(1.05)!important; /* (5% zoom effekt) */
+}
+
+.elementor-inline-item{
+    transition:transform .2s!important;
+    padding: 5px!important; /* Holde ikoner inden for viewport on scale 1.1 */
+}
+
+.elementor-inline-item:hover{
+    transform:scale(1.15)!important;
+}
+
+/* GENERELLE MEDIA RULES */
+
+@media screen and (max-width:375px){
+    #navbar {
+        width: 60%!important;
+        margin-left: 20%!important;
+    }
+
+    .elementor-inline-item{
+        margin-bottom:20px!important;
+        margin-top:20px!important;
+    }
+
+    .typed{
+        font-size: x-small!important;
+        letter-spacing: 0px!important;
+
+    }
+
+    .typed-two{
+        font-size: x-small!important;
+        letter-spacing: 0px!important;
+    }
+
+}   
+
+/* ANIMATED TEXT STYLING*/
+
+.typed, .typed-two{
+    font-weight:600;
+    font-size:large;
+    mix-blend-mode: overlay;
+    letter-spacing: 4px;
+    font-style: italic;
+
+}
+
+.typed-section{
+    text-align: center;
+}
+
+
+
+
+/* STYLING TIL PRODUCT PAGES */
+
+
+.stimorol-header{
+    text-align: center;
+
+}
+.pink{ /* Kun et enkelt ord skal være pink*/
+    color: #aa188e;
+}
+
+#project-one-button, #project-two-button{
+    border-style: none;
+
+}
+
+#project-one-back-button, #project-two-back-button{
+    border-style: none;
+}
+
+/* Hover effect */
+
+#stimorol-link-text, #klank-link-text, #taelskridt{
+    border-style:none!important;
+}
+
+#stimorol-link-text:hover, #klank-link-text:hover, #taelskridt:hover{
+    opacity: 0;
+}
+
+
+/*Cursor*/
+
+#magicPointer{
+    background:rgb(214, 214, 214)!important;
+}
+
+
