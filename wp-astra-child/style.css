@@ -66,6 +66,12 @@ Template: astra
         letter-spacing: 0px!important;
     }
 
+    #stimorol-link-text, #klank-link-text, #taelskridt-link-text{
+        opacity: 0;
+        
+    }
+
+
 }   
 
 /* ANIMATED TEXT STYLING*/
@@ -108,13 +114,24 @@ Template: astra
 
 /* Hover effect */
 
-#stimorol-link-text, #klank-link-text, #taelskridt{
+#stimorol-link-text, #klank-link-text, #taelskridt-link-text{
     border-style:none!important;
+    
 }
 
-#stimorol-link-text:hover, #klank-link-text:hover, #taelskridt:hover{
+#stimorol-link-text:hover, #klank-link-text:hover, #taelskridt-link-text:hover{
     opacity: 0;
+
 }
+
+#stimorol-column, #klank-column, #taelskridt-column{
+    transition: transform .2s!important; /* Animation */
+}
+
+#stimorol-column:hover, #taelskridt-column:hover, #klank-column:hover{
+    transform: scale(1.05)!important; /* (5% zoom effekt) */
+}
+
 
 
 /*Cursor*/
